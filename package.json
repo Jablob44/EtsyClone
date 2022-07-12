@@ -8,8 +8,8 @@
     "test": "test"
   },
   "engines": {
-    "node": "17.9.0",
-    "npm": "8.5.5"
+    "node": "16.14.2",
+    "npm": "8.5.0"
   },
   "scripts": {
     "postinstall": "webpack",

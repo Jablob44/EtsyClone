@@ -46,6 +46,7 @@ const Greeting = ({ currentUser, logout }) => {
     );
     // console.log("just before return")
     if (currentUser){
+        console.log("current user: ", currentUser)
         return personalGreeting()
     }
     else{

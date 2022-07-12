@@ -9,6 +9,7 @@ const sessionReducer = (state = loggedOut, action) => {
     // let nextState = Object.assign({}, state);
     switch (action.type) {
         case RECEIVE_CURRENT_USER:
+            console.log("action: ", action)
             return {id: action.currentUser.id};
         case LOGOUT_CURRENT_USER:
             return loggedOut;
