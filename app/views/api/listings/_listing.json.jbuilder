@@ -1,0 +1,1 @@
+json.extract! listing, :title, :price, :average_rating, :id

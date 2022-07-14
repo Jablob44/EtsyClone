@@ -1,3 +1,150 @@
+
 .etsme{
-    color: rgb(254, 162, 33);
+    display: flex;
+    /* justify-content: left; */
+    // font-size: ;
+    font-size: xx-large;
+    color: rgb(232, 108, 0);
+    padding: 10px;
+    padding-left: 20px;
+   }
+   
+.etsme-mini{
+    display: flex;
+    /* justify-content: left; */
+    // font-size: ;
+    font-size: x-large;
+    color: rgb(232, 108, 0);
+    padding: 10px;
+    padding-left: 20px;
+   }
+
+   header{
+       padding-top: 10px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .right-side-header{
+       display: flex;
+       padding: 10px;
+       padding-right: 20px;
+       /* justify-content: right; */
+       /* flex-direction: row; */
+       /* justify-content: space-around; */
+   }
+   /* 
+   .login-route{
+       display: flex;
+       
+       flex-direction: column; 
+       padding: 20px;
+   }
+   .signup-route{
+       display: flex;
+       
+       flex-direction: column;
+   } */
+   
+   .form-register{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       background-color: rgb(160, 160, 160);
+   }
+   
+   .header-group{
+       display: inline-flex;
+   }
+   
+   .search-bar{
+       padding: 10px;
+    //    margin-top: 9px;
+       overflow: hidden;
+       height: 20px;
+       width: 100%;
+       background-color: rgb(236, 241, 245);
+       border: solid black 2px;
+       border-radius: 30px;
+   }
+   
+   .modal-background {
+       position: fixed;
+       top: 0;
+       bottom: 0;
+       right: 0;
+       left: 0;
+       background: rgba(65, 65, 65, 0.7);
+       z-index: 10;
+   }
+   
+   .modal-child {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+   }
+
+   .ununderlined-link{
+       text-decoration: none;
+    //    padding: 10px;
+   }
+
+//    .cart-button{
+//        padding-right: 20px;
+//    }
+
+.login-form-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    // text-align: center;
+
+}
+
+.input-feild{
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: x-large;
+}
+
+.submit-button{
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100%;
+    height: 100px;
+    background-color: rgb(254, 237, 241);
+
+}
+
+.right-button{
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+.listing-index-item{
+    border: solid black 1px;
 }

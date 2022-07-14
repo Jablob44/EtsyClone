@@ -7,6 +7,16 @@ class User < ApplicationRecord
 
     after_initialize :ensure_session_token
 
+    has_many :listings,
+        primary_key: :id,
+        foreign_key: :listing_id,
+        class_name: :Listing
+
+    # belongs_to :user,
+    # primary_ky: :id,
+    # foreign_key: :user_id,
+    # class_name: :User
+
     #spire
 
     def self.find_by_credentials(username, password)

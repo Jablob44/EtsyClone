@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+testlisting = Listing.create([{ title: 'budgetkeanu' }, { body: 'have this budget keanu reeves' }, { price: 999 }, { author_id: 1}])

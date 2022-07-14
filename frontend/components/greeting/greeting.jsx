@@ -29,13 +29,16 @@ import {Link} from "react-router-dom"
 //     }
 // }
 // console.log("hit container greeting")
-const Greeting = ({ currentUser, logout }) => {
+const Greeting = ({ currentUser, logout, openModal }) => {
     // console.log("Inside greeting")
     const sessionLinks = () => (
       <nav className="login-signup">
-        <Link to="/login">Login</Link>
-        <br/>        
-        <Link to="/signup">Sign up!</Link>
+          {/* <Link to="/login" className="ununderlined-link">Login</Link> */}
+        <button onClick={() => openModal('login')} className="ununderlined-link right-buttons">Login</button>
+      
+        {/* <button>
+          <Link to="/signup">Sign up!</Link>
+        </button>         */}
       </nav>
     );
     const personalGreeting = () => (
