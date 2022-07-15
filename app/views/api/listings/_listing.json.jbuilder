@@ -1,1 +1,1 @@
-json.extract! listing, :title, :price, :average_rating, :id
+json.extract! listing, :title, :body, :price, :average_rating, :id

@@ -90,6 +90,7 @@
 
    .ununderlined-link{
        text-decoration: none;
+       color: black;
     //    padding: 10px;
    }
 
@@ -134,7 +135,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100%;
+    // margin-top: 100%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     height: 100px;
     background-color: rgb(254, 237, 241);
 
@@ -146,5 +150,51 @@ footer{
 }
 
 .listing-index-item{
+    // display: grid;
+    padding: 5px;
     border: solid black 1px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.listing-image{
+    width: 150px;
+}
+
+.listing-index{
+    // display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+}
+
+.listing-show-image{
+    width: 400px;
+}
+
+.show-page{
+    padding: 20px;
+}
+
+.header-name:hover{
+    background-color: gray;
+}
+
+.what-is-etsme{
+    background-color: rgb(251, 237, 224);
+    padding-top: 20px;
+    margin-bottom: 150px;
+    position: absolute;
+    z-index: -1;
+    height: 200px;
+    width: 100%;
+}
+
+.desc{
+    padding-left: 20px;
+}
+
+.desc-title{
+    text-align: center;
 }

@@ -6,6 +6,7 @@ import { Route, Switch, Link } from "react-router-dom";
 import Modal from "./modal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ListingIndexContainer from "./listing/listing_index_container"
+import ListingShowContainer from "./listing/listing_show_container";
 // import ListingIndexItem from "./listing/listing_index_item";
 // import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 
@@ -34,11 +35,14 @@ const App = () => (
         {/* <h1>Product listings</h1> */}
         <Switch>
           <Route exact path='/' component={ListingIndexContainer}/>
-          {/* <Route className="login-route" path="/login" component={login_form_container} />
-          <Route className="signup-route" path="/signup" component={signup_form_container} /> */}
+          <Route exact path='/listings/:listingId' component={ListingShowContainer}/>
         </Switch>
       </div>
       <footer>
+        <div className="what-is-etsme">
+          <h1 className="desc-title">What is Etsme?</h1>
+          <p className="desc">Etsme is inspired by the e-commerce website known as Etsy, where you buy/sell handmade items.</p>
+        </div>
         <h1 className="etsme-mini">Etsme</h1>
         <p>This is a very good and complete app.</p>
       </footer>

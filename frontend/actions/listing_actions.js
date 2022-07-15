@@ -18,9 +18,6 @@ export const receiveListings = (listings) => {
     }
 }
 
-// export const createListing = () => {
-
-// }
 
 
 export const getListing = (listingId) => (dispatch) => {

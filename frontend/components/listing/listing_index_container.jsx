@@ -5,7 +5,7 @@ import ListingIndex from "./listing_index";
 
 const mSTP = (state) => {
     console.log("inside container", state.entities.listings)
-    console.log("inside container", getListings)
+    console.log("inside container", Object.values(state.entities.listings))
     return{
         listings: Object.values(state.entities.listings)
     }
