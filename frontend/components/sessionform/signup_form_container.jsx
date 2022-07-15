@@ -4,6 +4,7 @@ import React from 'react';
 import { signup } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 import SessionForm from './session_form';
+import { clearSessionErrors } from '../../actions/session_actions';
 
 const mSTP = (state) => {
   return {
@@ -21,7 +22,9 @@ const mDTP = dispatch => {
         login
       </button>
     ),
-    closeModal: () => dispatch(closeModal())
+    closeModal: () => dispatch(closeModal()),
+    clearSessionErrors: () => dispatch(clearSessionErrors())
+
   };
 };
 
