@@ -31,7 +31,7 @@ const App = () => (
           </button>
         </div>
       </header>
-      <div>
+      <div className="page-contents">
         {/* <h1>Product listings</h1> */}
         <Switch>
           <Route exact path='/' component={ListingIndexContainer}/>
@@ -43,8 +43,10 @@ const App = () => (
           <h1 className="desc-title">What is Etsme?</h1>
           <p className="desc">Etsme is inspired by the e-commerce website known as Etsy, where you buy/sell handmade items.</p>
         </div>
-        <h1 className="etsme-mini">Etsme</h1>
-        <p>This is a very good and complete app.</p>
+        <div className="footerfooter">
+          <h1 className="etsme-mini">Etsme</h1>
+          <p>This is a very good and complete app.</p>
+        </div>
       </footer>
   
     </div>

@@ -20,7 +20,7 @@
    }
 
    header{
-       padding-top: 10px;
+    //    padding-top: 10px;
        display: flex;
        flex-direction: row;
        justify-content: space-between;
@@ -29,12 +29,15 @@
    
    .right-side-header{
        display: flex;
+       align-items: center;
        padding: 10px;
        padding-right: 20px;
+       justify-content: space-evenly;
        /* justify-content: right; */
        /* flex-direction: row; */
        /* justify-content: space-around; */
    }
+
    /* 
    .login-route{
        display: flex;
@@ -58,11 +61,13 @@
    
    .header-group{
        display: inline-flex;
+    //    padding-left: 20px;
    }
    
    .search-bar{
        padding: 10px;
     //    margin-top: 9px;
+       font-size: large;
        overflow: hidden;
        height: 20px;
        width: 100%;
@@ -94,9 +99,18 @@
     //    padding: 10px;
    }
 
-//    .cart-button{
-//        padding-right: 20px;
-//    }
+   .cart-button{
+       background-color: white;
+       padding: 10px;
+       border: none;
+   }
+
+   .cart-button:hover{
+        cursor: pointer;
+        // background-color: rgb(240, 240, 240);
+        padding: 10px;
+        border-radius: 10px;
+   }
 
 .login-form-box{
     display: flex;
@@ -129,37 +143,59 @@ h1{
     border-radius: 10px;
     background-color: black;
     color: white;
+    transition: box-shadow .7s, background-color .7s;
+}
+
+.submit-button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgb(178, 178, 178);
 }
 
 footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: -150px;
     // margin-top: 100%;
     position: absolute;
     width: 100%;
     bottom: 0;
     height: 100px;
     background-color: rgb(254, 237, 241);
-
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.right-button{
-   margin-left: 5px;
-   margin-right: 5px;
+.right-buttons{
+//    margin-left: 5px;
+//    margin-right: 5px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+}
+.right-buttons:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .listing-index-item{
     // display: grid;
     padding: 5px;
-    border: solid black 1px;
+    // border: solid black 1px;
     width: 150px;
-    border-radius: 5px;
-    margin: 20px;
+    // border-radius: 5px;
+    // margin-left: 10px;
 }
 
 .listing-image{
     width: 150px;
+    transition: box-shadow .7s
+}
+
+.listing-image:hover{
+    box-shadow: 2px 2px 2px rgb(178, 178, 178);
 }
 
 .listing-index{
@@ -174,27 +210,117 @@ footer{
 }
 
 .show-page{
-    padding: 20px;
+    display: flex;
+}
+.show-page-info{
+    margin-left: 20px;
+    border-bottom: solid rgb(200, 200, 200) 2px;
 }
 
 .header-name:hover{
-    background-color: gray;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(178, 178, 178);
+    background-color: rgb(240, 240, 240);
+}
+
+.header-name{
+    padding: 5px;
+    transition: box-shadow .7s, background-color .7s;
+    border-radius: 10px;
+    // margin: 10px;
 }
 
 .what-is-etsme{
     background-color: rgb(251, 237, 224);
     padding-top: 20px;
     margin-bottom: 150px;
+    margin-top: -150px;
     position: absolute;
     z-index: -1;
     height: 200px;
     width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .desc{
+    margin-top: 10px;
     padding-left: 20px;
 }
 
 .desc-title{
     text-align: center;
+}
+
+.header-button{
+    height: 100%;
+    align-self: center;
+    border: none;
+    background-color: white;
+    width: 100px;
+    padding: 10px;
+}
+
+.header-button:hover{
+    cursor: pointer;
+    // background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.login-as-demo{
+    background-color: white;
+    border: solid hwb(246 53% 0%) 2px;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    // (147,135,249)
+}
+
+// .login-as-demo:hover{
+//     background-color: rgb(240, 240, 240);
+// }
+
+button{
+    margin: 5px;
+    background-color: white;
+    border: none;
+    transition: box-shadow .7s, background-color .7s;
+    border-radius: 10px;
+
+}
+
+.other-form{
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 1px 1px 1px rgb(178, 178, 178);
+    background-color: rgb(240, 240, 240);
+    // z-index: 99999;
+}
+
+// animations
+
+// @keyframes button-hover{
+
+// }
+
+.page-contents{
+    margin: 20px;
+}
+
+.add-to-cart{
+    width: 100%;
+    padding: 10px;
+    border: solid gray;
 }

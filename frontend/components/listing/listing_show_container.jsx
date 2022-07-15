@@ -2,9 +2,10 @@ import { connect } from "react-redux";
 import { getListing } from "../../util/listing_api_util";
 import ListingShow from "./listing_show";
 const mSTP = (state, ownProps) => {
-    // console.log(state.entities.listings)
+    console.log(ownProps)
     return{
-        listing: state.entities.listings[ownProps.match.params.listingId]
+        listing: state.entities.listings[ownProps.match.params.listingId],
+        listingId: ownProps.match.params.listingId
     }
 }
 

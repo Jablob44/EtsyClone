@@ -16,3 +16,14 @@ Listing.create!(title: 'budgetkeanu but actually budget', body: 'have this budge
 user4 = User.create!(username: "theUser4", email: "theuser4", password: "123456");
 Listing.create!(title: 'this is a different title', body: 'have this other other keanu.', price: "FREE", author_id: user4.id)
 demoUser = User.create!(username: "demo", email: "demotheuser", password: "123456");
+Listing.create!(title: 'test keanu', body: 'tk', price: "FREE", author_id: user4.id)
+Listing.create!(title: 'test keanu2', body: 'tk2', price: "FREE", author_id: user4.id)
+Listing.create!(title: 'test keanu3', body: 'tk3', price: "FREE", author_id: user4.id)
+Listing.create!(title: 'test keanu4', body: 'tk4', price: "FREE", author_id: user4.id)
+Listing.create!(title: 'test keanu5', body: 'tk5', price: "FREE", author_id: user4.id)
+Listing.create!(title: 'test keanu6', body: 'tk6', price: "FREE", author_id: user4.id)
+
+
+
+
+
