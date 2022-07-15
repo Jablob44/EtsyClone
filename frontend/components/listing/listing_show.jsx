@@ -4,7 +4,7 @@ class ListingShow extends React.Component{
     constructor(props){
         super(props)
     }
-    // broken
+    // broken:
     // componentDidMount(){
     //     console.log("the listing", this.props.listing)
     //     this.props.getListing(this.props.listingId)
