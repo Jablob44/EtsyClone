@@ -5,10 +5,10 @@ class ListingShow extends React.Component{
         super(props)
     }
     // broken:
-    // componentDidMount(){
-    //     console.log("the listing", this.props.listing)
-    //     this.props.getListing(this.props.listingId)
-    // }
+    componentDidMount(){
+        console.log("the listing", this.props.listing)
+        this.props.getListing(this.props.listingId)
+    }
 
     render(){
         console.log("the test of all test", this.props.listing)
@@ -17,13 +17,21 @@ class ListingShow extends React.Component{
         }else{
             return(
                 <div className="show-page">
-                        <img className="listing-show-image" src="https://www.ladbible.com/cdn-cgi/image/width=720,quality=70,format=webp,fit=pad,dpr=2/https%3A%2F%2Fs3-images.ladbible.com%2Fs3%2Fcontent%2F970181805e8d16e5a4fa10c74420bfe8.png"/>
-                        <div className="show-page-info">
-                            <h1 className="listing-show-title">{this.props.listing.title}</h1>
-                            <h2 className="listing-show-price">${this.props.listing.price}</h2>
-                            <h2 className="listing-show-rating">{this.props.listing.average_rating}</h2>
-                            <h2 className="listing-show-body">{this.props.listing.body}</h2>
-                            <button className="add-to-cart">Add to cart</button>
+                        <div className="full-page-info">
+                            <img className="listing-show-image" src={this.props.listing.photoUrl}/>
+                            <div className="show-page-info">
+                                <h1 className="listing-show-title lst">{this.props.listing.title}</h1>
+                                <h2 className="listing-show-price lst">${this.props.listing.price}</h2>
+                                <h2 className="listing-show-rating lst">{this.props.listing.average_rating}</h2>
+                                <h2 className="listing-show-body lst">{this.props.listing.body}</h2>
+                                <button className="add-to-cart lst">Add to cart</button>
+                            </div>
+                        </div>
+                        <br/>
+                        <div className="reviews">
+                            <h1>Reviews:</h1>
+                            <br />
+                            <h1>One day this will be a review container/component. 10/10 wouldn't recommend</h1>
                         </div>
                 </div>
             )

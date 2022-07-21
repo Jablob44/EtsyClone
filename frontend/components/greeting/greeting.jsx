@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom"
+import UserDropdown from "../dropdown/user_dropdown_container";
+
 // class Greeting extends React.Component {
 //     constructor(props){
 //         super(props)
@@ -43,8 +45,13 @@ const Greeting = ({ currentUser, logout, openModal }) => {
     );
     const personalGreeting = () => (
       <hgroup className="header-group">
-        <h2 className="header-name">Hi, {currentUser.username}!</h2>
-        <button className="header-button" onClick={logout}>Log Out</button>
+        <div className="dropdown">
+            <h2 className="header-name">Hi, {currentUser.username}!</h2>
+            <UserDropdown/>
+        </div>
+        <Link to='/'>
+          <button className="header-button" onClick={logout}>Log Out</button>
+        </Link>
       </hgroup>
     );
     // console.log("just before return")

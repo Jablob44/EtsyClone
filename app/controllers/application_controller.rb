@@ -11,9 +11,9 @@ class ApplicationController < ActionController::Base
         @current_user ||= User.find_by_session_token(session[:session_token])
     end
 
-    # def require_logged_in
-    #     redirect_to new_sessions_url unless logged_in?
-    # end
+    def require_logged_in
+        redirect_to '/' unless logged_in?
+    end
 
     def logged_in?
         !!current_user

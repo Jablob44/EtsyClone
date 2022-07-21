@@ -44,7 +44,7 @@ class SessionForm extends React.Component {
       }
 
     loginDemoUser(){
-      this.setState({username: "demo", email: "demotheuser", password: "123456"})
+      this.setState({username: "demo", email: "demotheuser@gmail.com", password: "123456"})
       const demoUser = Object.assign({}, this.state);
       this.props.action(demoUser)
     }
@@ -59,27 +59,29 @@ class SessionForm extends React.Component {
                     {/* <div onClick={this.props.closeModal} className="close-modal">X</div> */}
                     {this.renderErrors()}
                     <div className="login-form">
-                    <label>Username:
+                    <label className="form-input">Username:
                         <br/>
-                        <input type="text" className="input-feild" value={this.state.username} onChange={this.update("username")}/>
+                        <input type="text" className="input-field" value={this.state.username} onChange={this.update("username")}/>
                     </label>
                     <br/>
-                    <label>Email:
+                    <label className="form-input">Email:
                         <br/>
-                        <input type="text" className="input-feild" value={this.state.email} onChange={this.update("email")}/>
+                        <input type="text" className="input-field" value={this.state.email} onChange={this.update("email")}/>
                     </label>
                     <br/>
-                    <label>Password:
+                    <label className="form-input">Password:
                         <br/>
-                        <input type="password" className="input-feild" value={this.state.password} onChange={this.update("password")}/>
+                        <input type="password" className="input-field" value={this.state.password} onChange={this.update("password")}/>
                     </label>
                     <br/>
                     <input type="submit" className="submit-button" value={this.props.formType}/>
-                    {
-                      this.props.formType === "login" ?
-                        <button className='login-as-demo' onClick={() => this.loginDemoUser()}>Demo User</button> : null
-                      
-                    }
+                    </div>
+                    <div className="demo-login-area">
+                      {
+                        this.props.formType === "login" ?
+                          <button className='login-as-demo' onClick={() => this.loginDemoUser()}>Demo User</button> : null
+                        
+                      }
                     </div>
                 </form>
             </div>

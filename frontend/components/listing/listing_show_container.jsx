@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { getListing } from "../../util/listing_api_util";
+import { getListing } from "../../actions/listing_actions";
 import ListingShow from "./listing_show";
 const mSTP = (state, ownProps) => {
     console.log(ownProps)

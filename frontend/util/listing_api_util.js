@@ -21,3 +21,21 @@ export const createListing = (listing) => {
         data: {listing}
     })
 }
+
+export const updateListing = (listing) => {
+    console.log(listing)
+    return $.ajax({
+        url: `api/listings/${listing.id}`,
+        method: 'PATCH',
+        data: {listing},
+        contentType: false,
+        processData: false
+    })
+}
+
+export const deleteListing = (listingId) => {
+    return $.ajax({
+        url: `api/listings/${listingId}`,
+        method: 'DELETE'
+    })
+}
