@@ -20,10 +20,12 @@ class ListingShow extends React.Component{
                         <div className="full-page-info">
                             <img className="listing-show-image" src={this.props.listing.photoUrl}/>
                             <div className="show-page-info">
-                                <h1 className="listing-show-title lst">{this.props.listing.title}</h1>
-                                <h2 className="listing-show-price lst">${this.props.listing.price}</h2>
-                                <h2 className="listing-show-rating lst">{this.props.listing.average_rating}</h2>
-                                <h2 className="listing-show-body lst">{this.props.listing.body}</h2>
+                                <div>
+                                    <h1 className="listing-show-title lst">{this.props.listing.title}</h1>
+                                    <h2 className="listing-show-price lst">${this.props.listing.price}</h2>
+                                    <h2 className="listing-show-rating lst">{this.props.listing.average_rating}</h2>
+                                    <h2 className="listing-show-body lst">{this.props.listing.body}</h2>
+                                </div>
                                 <button className="add-to-cart lst">Add to cart</button>
                             </div>
                         </div>

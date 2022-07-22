@@ -217,7 +217,7 @@ footer{
 }
 
 .listing-image:hover{
-    box-shadow: 0px 0px 5px 5px rgb(204, 204, 204);
+    box-shadow: 0px 0px 5px 5px rgb(215, 215, 215);
 }
 
 // .listing-index{
@@ -243,7 +243,7 @@ footer{
 
 .full-page-info{
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     // text-align: center;
     margin-top: 50px;
@@ -251,18 +251,20 @@ footer{
     margin-right: auto;
 }
 .show-page-info{
-    // display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     // width: 100%;
     width: 400px;
     max-width: 700px;
     min-width: 100px;
-    height: 334px;
+    height: 500px;
     margin-left: 20px;
     border-bottom: solid rgb(200, 200, 200) 2px;
 }
 
 .header-name:hover{
-    width: 70px;
+    width: fit-content;
     // height: 36px;
     // padding: 0px;
     cursor: pointer;
@@ -275,7 +277,7 @@ footer{
 }
 
 .header-name{
-    width: 70px;
+    width: fit-content;
     padding: 10px;
     // margin-left: 5px;
     // margin-right: 5px;
@@ -692,7 +694,7 @@ p{
 
 .delete-edit{
     border-top: solid rgb(200, 200, 200) 1px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .delete-edit-button{
@@ -752,3 +754,17 @@ p{
 // .submit-button-arrange{
     
 // }
+
+.listing-index-item-info{
+    overflow: hidden;
+}
+
+.listing-item-title{
+    white-space: nowrap;
+    text-overflow: hidden;
+}
+
+.listing-show-body{
+    overflow: scroll;
+    height: 250px;
+}

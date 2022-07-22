@@ -74,7 +74,10 @@ class ListingForm extends React.Component{
             // console.log("after updatedListing", formData)
             // this.props.action(updatedListing)
         }
-        this.props.history.push('/')
+        console.log("history: ", this.props.history)
+        if(this.props.formType === "Make listing"){
+            this.props.history.push('/')
+        }
       }
 
     handleFile(e){
