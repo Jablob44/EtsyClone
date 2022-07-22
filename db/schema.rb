@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_19_211218) do
+ActiveRecord::Schema.define(version: 2022_07_21_215227) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,7 +54,9 @@ ActiveRecord::Schema.define(version: 2022_07_19_211218) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "average_rating", default: 0
+    t.string "category"
     t.index ["author_id"], name: "index_listings_on_author_id"
+    t.index ["category"], name: "index_listings_on_category"
   end
 
   create_table "users", force: :cascade do |t|

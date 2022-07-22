@@ -49,8 +49,8 @@ const Greeting = ({ currentUser, logout, openModal }) => {
             <h2 className="header-name">Hi, {currentUser.username}!</h2>
             <UserDropdown/>
         </div>
-        <Link to='/'>
-          <button className="header-button" onClick={logout}>Log Out</button>
+        <Link className="atag" to='/'>
+          <button className="header-button eliminate-bottom-margin" onClick={logout}>Log Out</button>
         </Link>
       </hgroup>
     );

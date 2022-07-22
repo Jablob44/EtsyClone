@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 console.log("hit listing form")
+// import { Link } from "react-router-dom";
 // console.log("hit listing form")
 
 class ListingForm extends React.Component{
@@ -73,7 +74,7 @@ class ListingForm extends React.Component{
             // console.log("after updatedListing", formData)
             // this.props.action(updatedListing)
         }
-        // this.props.history.push('/')
+        this.props.history.push('/')
       }
 
     handleFile(e){
@@ -150,16 +151,30 @@ class ListingForm extends React.Component{
                         </label>
                         <br/>
                     </div>
-                    <div className="listing-input mini-margin">
-                        <h2 className="label-for-listing-input">Add a photo:</h2>
-                        <div className="upload-container">
-                            <input type='file' className="photo-upload" onChange={this.handleFile.bind(this)}/>
+                    <div className="listing-input mini-margin photo-area">
+                        <div className="left-side-image-upload">
+                            <div>
+                                <h2 className="label-for-listing-input">Add a photo:</h2>
+                                <p className="photo-desc">Use a picture that shows off your product!</p>
+                                <div className="upload-container">
+                                    <input type='file' className="photo-upload" onChange={this.handleFile.bind(this)}/>
+                                </div>
+                            </div>
+                            <div className="preview-container">
+                                <h2 className="label-for-listing-input">Preview</h2>
+                                {previewImg}
+                            </div>
                         </div>
-                        <h2 className="label-for-listing-input">Preview</h2>
-                        {previewImg}
+                        <div className="right-side-image-upload">
+                            <h2 className="label-for-listing-input example-label-margin">Example photo:</h2>
+                            <img className="preview-image example-image-margin" src="https://jjustice-dev.s3.us-west-1.amazonaws.com/exampleimage.jpeg"></img>
+                        </div>
                     </div>
                     {/* <Link to={`/users/${this.props.currentUser.id}`}> */}
-                        <input type="submit" className="submit-button-listing" value={this.props.formType === "Make listing" ? "Post listing" : "Update listing"}/>
+                        <input type="submit" className="submit-button-listing submit-button-arrange" value={this.props.formType === "Make listing" ? "Post listing" : "Update listing"}>
+                            {/* <button className="non-button-button" onClick={() => <Link to={`/users/${this.props.currentUser.id}`}></Link>}>
+                            </button> */}
+                        </input>
                     {/* </Link> */}
                 </form>
             </div>

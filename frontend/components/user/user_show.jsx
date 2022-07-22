@@ -44,12 +44,14 @@ class UserShow extends React.Component{
                                 return(
                                     <div>
                                         <ListingIndexItem key={listing.id} listing={listing} />
-                                        <Link to={`/listings/${listing.id}/edit`}>
-                                            <button>Edit</button>
-                                        </Link>
-                                        <Link to={`/users/${this.props.currentUser.id}`}>
-                                            <button onClick={() => this.props.deleteListing(listing.id)}>Delete</button>
-                                        </Link>
+                                        <div className="delete-edit">
+                                            <Link to={`/listings/${listing.id}/edit`}>
+                                                <button className="delete-edit-button">Edit</button>
+                                            </Link>
+                                            <Link to={`/users/${this.props.currentUser.id}`}>
+                                                <button className="delete-edit-button" onClick={() => this.props.deleteListing(listing.id)}>Delete</button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 )
                             })}

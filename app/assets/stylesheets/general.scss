@@ -34,6 +34,7 @@
        padding: 10px;
        padding-right: 20px;
        justify-content: space-evenly;
+    //    justify-content: center;
        /* justify-content: right; */
        /* flex-direction: row; */
        /* justify-content: space-around; */
@@ -62,6 +63,7 @@
    
    .header-group{
        display: inline-flex;
+       align-items: center;
     //    padding-left: 20px;
    }
    
@@ -215,7 +217,7 @@ footer{
 }
 
 .listing-image:hover{
-    box-shadow: 2px 2px 2px rgb(178, 178, 178);
+    box-shadow: 0px 0px 5px 5px rgb(204, 204, 204);
 }
 
 // .listing-index{
@@ -260,19 +262,24 @@ footer{
 }
 
 .header-name:hover{
-    // width: 70px;
+    width: 70px;
     // height: 36px;
     // padding: 0px;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
+    // margin-left: 5px;
+    // margin-right: 5px;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px rgb(178, 178, 178);
+    box-shadow: 2px 2px 2px rgb(203, 203, 203);
     background-color: rgb(240, 240, 240);
 }
 
 .header-name{
-    // width: 70px;
-    padding: 5px;
+    width: 70px;
+    padding: 10px;
+    // margin-left: 5px;
+    // margin-right: 5px;
+    text-align: center;
     transition: box-shadow .7s, background-color .7s;
     border-radius: 10px;
     // margin: 10px;
@@ -310,7 +317,7 @@ footer{
     align-self: center;
     border: none;
     background-color: white;
-    width: 100px;
+    width: 70px;
     padding: 10px;
     margin-top: 0px;
 }
@@ -319,7 +326,7 @@ footer{
     cursor: pointer;
     // background-color: rgb(240, 240, 240);
     border-radius: 10px;
-    padding: 10px;
+    // padding: 10px;
     border: none;
 }
 
@@ -474,6 +481,8 @@ button:active{
     visibility: none;
     position: absolute;
     padding: 10px;
+    // margin-right: 20px;
+    // margin-top: 40px;
     border-radius: 20px;
     width: 200px;
     flex-direction: column;
@@ -489,6 +498,10 @@ button:active{
 .dropdown{
     position: relative;
     display: block;
+    padding: 10px;
+    // flex-direction: column;
+    // margin-top: 60px;
+    // justify-content: center;
 }
 
 .dropdown:hover .dropdown-items{
@@ -508,11 +521,12 @@ button:active{
     margin: 10px;
 }
 
-// .full-listing-form{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+.full-listing-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    // align-items: center;
+}
 
 .description-field{
     width: 70%;
@@ -540,6 +554,7 @@ button:active{
 
 .listing-input{
     border: solid rgb(200, 200, 200) 1px;
+    // display: flex;
 }
 
 .input-field-listing{
@@ -619,6 +634,7 @@ p{
     justify-content: center;
     align-items: center;
     margin-left: 20px;
+    margin-top: 20px;
     background-color: rgb(243, 243, 243);
     width: 250px;
     height: 100px;
@@ -633,7 +649,7 @@ p{
     min-height: 200px;
     max-width: 250px;
     max-height: 250px;
-    margin-bottom: 20px;
+    margin: 20px;
     // transition: box-shadow .7s;
     border: solid rgb(200, 200, 200) 2px;
     margin-left: 20px;
@@ -668,3 +684,71 @@ p{
 .right-side-footer{
     padding-right: 20px;
 }
+
+.listing-index-title{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.delete-edit{
+    border-top: solid rgb(200, 200, 200) 1px;
+    margin-right: 20px;
+}
+
+.delete-edit-button{
+    margin: 5px;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+.delete-edit-button:hover{
+    margin: 5px;
+    margin-left: 0px;
+}
+
+// .dropcontainer{
+//     // margin-right: 100px;
+//     // margin-top: 0px;
+// }
+
+.atag{
+    height: fit-content;
+}
+
+.eliminate-bottom-margin{
+    margin-bottom: 0px;
+}
+
+.photo-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-desc{
+    margin-left: 20px;
+}
+
+.left-side-image-upload{
+    display: flex;
+}
+
+.right-side-image-upload{
+    border-left: solid rgb(200, 200, 200) 1px;
+}
+
+.preview-container{
+    margin-left: 40px;
+}
+
+.example-image-margin{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.example-label-margin{
+    margin-left: 40px;
+}
+
+// .submit-button-arrange{
+    
+// }

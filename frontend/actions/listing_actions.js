@@ -4,6 +4,7 @@ import * as Util from "../util/listing_api_util";
 export const GET_LISTING = "GET_LISTING";
 export const GET_LISTINGS = "GET_LISTINGS";
 export const REMOVE_LISTING = "REMOVE_LISTING";
+// export const RECEIVE_LISTING_CATEGORIES = "RECEIVE_LISTING_CATEGORIES";
 
 export const receiveListing = (listing) => {
     return{
@@ -11,6 +12,13 @@ export const receiveListing = (listing) => {
         listing
     }
 }
+
+// export const receiveListingCategories = (listings) => {
+//     return{
+//         type: RECEIVE_LISTING_CATEGORIES,
+//         listings: 
+//     }
+// }
 
 export const receiveListings = (listings) => {
     return{

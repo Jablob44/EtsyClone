@@ -13,17 +13,17 @@ class UserDropdown extends React.Component{
     // }
     render(){
         return(
-            // <div className="dropdown">
-            <ul className="dropdown-items">
-                    <div className="space-above"></div>
-                    <h1 className="username-dropdown">{this.props.currentUser.username}</h1>
-                    <Link to='/createListing'>
-                        <button className="dropdown-button" >Make a listing</button>
-                    </Link>
-                    <Link to={`/users/${this.props.currentUser.id}`}>
-                        <button className="dropdown-button">Your account</button>
-                    </Link>
+                <ul className="dropdown-items">
+                        {/* <div className="space-above">^</div> */}
+                        <h1 className="username-dropdown">{this.props.currentUser.username}</h1>
+                        <Link to='/createListing'>
+                            <button className="dropdown-button" >Make a listing</button>
+                        </Link>
+                        <Link to={`/users/${this.props.currentUser.id}`}>
+                            <button className="dropdown-button">Your account</button>
+                        </Link>
                 </ul>
+           
             // </div>
         )
     }
