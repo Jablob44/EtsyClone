@@ -56,6 +56,8 @@ const App = () => (
         </div>
         <div className="footerfooter">
           <h1 className="etsme-mini">Etsme</h1>
+          <a>https://github.com/Jablob44/EtsyClone</a>
+          <a>https://www.linkedin.com/feed/</a>
           <p className="right-side-footer">This is a very good and complete app.</p>
         </div>
       </footer>
